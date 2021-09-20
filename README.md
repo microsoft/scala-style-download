@@ -1,14 +1,44 @@
-# Project
+# Scalastyle Download Action
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+GitHub Action that downloads [Scalastyle](http://www.scalastyle.org/).
 
-As the maintainer of this project, please make a few updates:
+## When to use
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+This action is useful when you need to download Scalastyle to later examine your Scala code.
+
+## How it works
+
+1. The GitHub Action first downloads wget package to easily retrieve a file from an HTTP url.
+2. The GitHub Action then retrieves Scalastyle jar package from and URL.
+
+> Note: You can specify the URL from Scalastyle jar package. The default one in this Action is version 2.12
+
+## Getting Started
+
+### Prerequisites
+
+* Make sure you have setup Java
+* Make sure you have setup Scala
+
+You can look for actions that help you with this pre-reqs in the Actions Marketplace.
+
+### Usage
+
+```yml
+steps:
+    - name: Download Scalastyle
+      uses: microsoft/scala-style-download@v1.0.0
+      with:
+        scalastyle-url: 'https://repo1.maven.org/maven2/org/scalastyle/scalastyle_2.12/1.0.0/scalastyle_2.12-1.0.0-batch.jar' # Default downloads version 2.12    
+```
+
+### Inputs
+
+### Inputs
+
+| Name | Description | Required | Default value |
+| --- | --- | --- | --- |
+| `scalastyle-url` | URL for Scalastyle jar package | false |https://repo1.maven.org/maven2/org/scalastyle/scalastyle_2.12/1.0.0/scalastyle_2.12-1.0.0-batch.jar |
 
 ## Contributing
 
