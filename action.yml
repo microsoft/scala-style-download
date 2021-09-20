@@ -1,0 +1,16 @@
+name: 'scalastyle-download'
+description: 'Downloads Scalastyle'
+
+inputs:
+  scalastyle-url:
+    description: 'Scalastyle jar URL'
+    required: false
+    default: 'https://repo1.maven.org/maven2/org/scalastyle/scalastyle_2.12/1.0.0/scalastyle_2.12-1.0.0-batch.jar'
+
+runs:
+  using: "composite"
+  steps:
+    - run: | 
+        sudo apt-get install -y wget
+        sudo wget -O scalastyle.jar ${{ inputs.scalastyle-url }}
+      shell: bash
