@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - "action.yml"
-      - ".github/workflows/cd.yml"
+      - ".github/workflows/ci.yml"
 
 jobs:
   test:
@@ -19,5 +19,5 @@ jobs:
     - name: Setup Java and Scala
       uses: olafurpg/setup-scala@v10
 
-    - name: Download scalastyle
+    - name: Download Scalastyle
       uses: ./
