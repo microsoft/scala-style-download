@@ -1,4 +1,5 @@
-# Scalastyle Download Action
+# Scalastyle Download Action [![Build](https://github.com/microsoft/scala-style-download/actions/workflows/ci.yml/badge.svg)](https://github.com/microsoft/scala-style-download/actions/workflows/ci.yml)
+
 
 GitHub Action that downloads [Scalastyle](http://www.scalastyle.org/).
 
