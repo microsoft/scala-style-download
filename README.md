@@ -35,8 +35,6 @@ steps:
 
 ### Inputs
 
-### Inputs
-
 | Name | Description | Required | Default value |
 | --- | --- | --- | --- |
 | `scalastyle-url` | URL for Scalastyle jar package | false |https://repo1.maven.org/maven2/org/scalastyle/scalastyle_2.12/1.0.0/scalastyle_2.12-1.0.0-batch.jar |
