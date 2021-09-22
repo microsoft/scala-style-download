@@ -27,7 +27,7 @@ You can look for actions that help you with this pre-reqs in the Actions Marketp
 
 ```yml
 steps:
-    - name: Download Scalastyle
+    - name: scalastyle-download
       uses: microsoft/scalastyle-download@v1.0.0
       with:
         scalastyle-url: 'https://repo1.maven.org/maven2/org/scalastyle/scalastyle_2.12/1.0.0/scalastyle_2.12-1.0.0-batch.jar' # Default downloads version 2.12    
